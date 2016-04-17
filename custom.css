@@ -1,0 +1,62 @@
+/* Do not modify ANY file under /assets
+All customizations should take place here */
+
+h1 { font-size: 40px; line-height: 47px; }
+h2 { font-size: 34px; line-height: 42px; }
+h3 { font-size: 28px; line-height: 37px; }
+h4 { font-size: 24px; line-height: 32px; }
+h5 { font-size: 18px; line-height: 27px; }
+h6 { font-size: 16px; line-height: 22px; }
+
+p {
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.lead {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.navbar-pasific .navbar-brand {
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
+
+.navbar-brand-footer {
+    background: url('./_assets/img/logo/logo-gray.png') 0 0 no-repeat;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    color: #8b949b;
+    width: 140px;
+}
+
+#pageloader {
+    background-color: #222222;
+}
+
+#blog div.blog-three-mini {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
+
+#blog div.blog-three-mini p {
+    font-size: 15px;
+}
+
+ul, ol {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 15px;
+}
+
+ol li {
+    line-height: 25px;
+    margin-left: 40px;
+}
+
+ul.icon-list li {
+    line-height: 30px;
+}
