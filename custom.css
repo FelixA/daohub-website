@@ -60,3 +60,13 @@ ol li {
 ul.icon-list li {
     line-height: 30px;
 }
+
+.dao_container {
+   padding-bottom: 300px;
+}
+
+.get-tokens-button {
+   background-color: #ff4530 !important;
+   padding-left: 20px !important;
+   padding-right: 20px !important;
+}
