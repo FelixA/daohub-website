@@ -236,11 +236,17 @@
 
                             <p>The JSON interface to interact with the contract is:</p>
 
-                            <script src="https://gist.github.com/stephantual/a2f9d26ec9c82e9d03cf389af61d5c6e.js"></script>
+                            <div style="margin-top:-15px;padding-bottom:20px">
+                               <a onclick="$('.showcode').show();" class="button button-pasific button-md hover-ripple-out mt20 animated" data-animation="fadeInUp" data-animation-delay="500">Show JSON-Interface</a>
+                               <a data-clipboard-text="" class="cpy2Clp button button-pasific button-md hover-ripple-out mt20 animated" data-animation="fadeInUp" data-animation-delay="500">Copy to Clipboard</a>
+                            </div>
+                            <div class="showcode" style="display:none">
+                                <script src="https://gist.github.com/stephantual/a2f9d26ec9c82e9d03cf389af61d5c6e.js"></script>
+                            </div>
 
                             <!-- TODO: Add video <p>A generic tutorial video can be found on YouTube.</p> -->
 
-                            <p>Becaues The DAO will be deployed as an exact implementation of the Standard DAO Framework. The <a href="https://download.slock.it/public/DAO/WhitePaper.pdf" target="_new">Whitepaper</a> therefore describes perfectly how the DAO functions and is a great place to start learning more.</p>
+                            <p>Because The DAO will be deployed as an exact implementation of the Standard DAO Framework. The <a href="https://download.slock.it/public/DAO/WhitePaper.pdf" target="_new">Whitepaper</a> therefore describes perfectly how the DAO functions and is a great place to start learning more.</p>
 
                             <!-- TODO insert github url <p>The DAO was deployed using the source code that can be found and audited on address </p>--> 
 
@@ -343,9 +349,15 @@
         <!-- <script src="assets/js/main/jquery.sticky.js"></script> -->
         <script src="assets/js/main/imagesloaded.pkgd.min.js"></script>
         <script src="assets/js/main/main.js"></script>
+        <script src="assets/js/main/clipboard.min.js"></script>
 
         <script src="custom.js"></script>
-        
+        <script>
+           $(function() {
+              $('.cpy2Clp').attr("data-clipboard-text",$('#file-donotuse-jason-LC1').html());
+              new Clipboard('.cpy2Clp');
+           });
+        </script>
 
 
 
