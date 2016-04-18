@@ -165,6 +165,7 @@ $(document).ready(function() {
 					to: dataperc,
 					speed: 3000,
 					refreshInterval: 50,	
+               decimals : dataperc.indexOf(".")<0?0:2
 				});  
 			});
 		});
