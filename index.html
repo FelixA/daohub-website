@@ -124,7 +124,9 @@
                         <li><a href="creation.html" class="color-light">Creation</a></li>
                         <li><a href="proposals.html" class="color-light">Proposals</a></li>
                         <li><a href="manifesto.html" class="color-light">Manifesto</a></li>
-                        <li><a href="curator.html" class="color-light">Curator</a></li>
+                        <!--<link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="assets/css/owl-carousel/owl.transitions.css">-->
                         <li><a href="principles.html" class="color-light">Principles</a></li>
                         <li><a href="voting.html" class="color-light">Voting</a></li>
                         <li><a href="forums.html" class="color-light">Forums</a></li>
@@ -221,132 +223,6 @@
 
 
 
-        
-        <!-- Token Creation
-        ===================================== -->
-        <div id="fact" class="bg-grad-stellar pt100 pb100">
-            <div class="container">
-                
-                <!-- title and short description start -->
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center mb50">                        
-                        <h1 class="font-size-normal color-light">
-                            <small class="color-light">A One Time Only Event</small>
-                            Get DAO Tokens
-                        </h1>
-                        
-                    </div>
-                </div>
-                <!-- title and short description end -->
-                
-                <div class="row">
-                    
-                    <!-- fun fact left start -->
-                    <div class="col-md-3">
-                        <div class="row">
-                            
-                            <!-- fun fact one start -->
-                            <div class="col-md-12 col-sm-6 col-xs-6">
-                                <div class="fact">                                    
-                                    <div class="fact-number timer dao-stat-token-sold-data" data-perc="387">
-                                        <span class="factor color-light dao-stat-token-sold" ></span>
-                                    </div>                                    
-                                    <span class="fact-title color-light alpha7">DAO Tokens Created</span>
-                                </div>
-                            </div>
-                            <!-- fun fact one end -->
-                            
-                            <!-- fun fact two start -->
-                            <div class="col-md-12 col-sm-6 col-xs-6">
-                                <div class="fact">
-                                    <div class="fact-number timer dao-stat-days-left-data" data-perc="578">
-                                        <span class="factor color-light dao-stat-days-left"></span>
-                                    </div>
-                                    <span class="fact-title color-light alpha7">Days Left</span>
-                                </div>
-                            </div>
-                            <!-- fun fact two end -->
-                            
-                        </div>
-                    </div>
-                    <!-- fun fact left end -->
-                    
-                    <!-- fun fact right start -->
-                    <div class="col-md-3 col-md-push-6">
-                        <div class="row">
-                            
-                            <!-- fun fact three start -->
-                            <div class="col-md-12 col-sm-6 col-xs-6">
-                                <div class="fact">
-                                    <div class="fact-number timer dao-stat-token-price-data" data-perc="175">
-                                        <span class="factor color-light dao-stat-token-price"></span>
-                                    </div>
-                                    <span class="fact-title color-light alpha7">Current Rate</span>
-                                </div>
-                            </div>
-                            <!-- fun fact three end -->
-                            
-                            <!-- fun fact four start -->
-                            <div class="col-md-12 col-sm-6 col-xs-6">
-                                <div class="fact">
-                                    <div class="fact-number timer dao-stat-total-eth-data" data-perc="350">
-                                        <span class="factor color-light dao-stat-total-eth"></span>
-                                    </div>
-                                    <span class="fact-title color-light alpha7 ">Total ETH</span>
-                                </div>
-                            </div>
-                            <!-- fun fact four end -->
-                            
-                        </div>
-                    </div>
-                    <!-- fun fact right end -->
-                    
-                    <div class="col-md-6 col-md-pull-3">
-                        <img src="_assets/img/home/map.png" alt="macbook" class="img-responsive">
-                    </div>
-                    
-                </div>
-                
-                <div class="row">
-                    <div class="col-sm-8 col-sm-push-2 text-center">
-                        <h4 class="pt25 color-light">The time has come to breathe life into The DAO</h4>
-                        <p class="pb10 color-light alpha8">DAO tokens are created when sending ETH from any Ethereum Account you have control over to The DAO’s address at 0x8330393….de91f. You can use any wallet of your choosing to create DAO tokens. </p>
-                        <div id="dao_container">
-                           <a href="#" class="button button-md button-gray hover-ripple-out"><span class="color-primary">Start Here</span></a>
-                        </div>
-                    </div>
-                </div>
-                
-                 <div class="row" style="padding-top:30px">
-                    <div class="col-sm-8 col-sm-push-2 text-center">
-                           <h5 class="text-center mb20">Check Your Balance</h4>
-                           <form id="dao_account_form" class="form-horizontal has-feedback">
-                              <label class="sr-only" for="dao_account_adr">Input your address</label>
-                              <input  placeholder="Enter the address of the account used to purchase DAO tokens" type="text" maxlength="42" minlength="40" id="dao_account_adr" 
-                              
-                              class="input-md input-circle form-control bg-transparent color-light text-center"  aria-describedby="helpBlock" >
-                              <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true" id="dao_account_adr_invalid" style="display:none"></span>                              
-                              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" id="dao_account_adr_valid" style="display:none"></span>                              
-                           </form>
-                           
-                           <div id="dao_account_result" style="display:none">
-                              <div class="row" style="padding-top:20px">
-                                 <div class="col-md-6">
-                                    Account Balance : <b style="font-size:19px" id="dao_account_balance"></b> ETH
-                                 </div>
-                                 <div class="col-md-6">
-                                    DAO tokens owned : <b style="font-size:19px" id="dao_account_tokens"></b> DAO tokens
-                                 </div>
-                              </div>
-                          </div>
-                                                
-                    </div>
-                </div>
-                
-                
-                
-            </div><!-- container end -->
-        </div><!-- section fun fact end -->
         
 
         
