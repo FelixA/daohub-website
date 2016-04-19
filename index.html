@@ -320,11 +320,13 @@
                  <div class="row" style="padding-top:30px">
                     <div class="col-sm-8 col-sm-push-2 text-center">
                            <h5 class="text-center mb20">Check Your Balance</h4>
-                           <form id="dao_account_form" class="form-horizontal">
+                           <form id="dao_account_form" class="form-horizontal has-feedback">
                               <label class="sr-only" for="dao_account_adr">Input your address</label>
                               <input  placeholder="Enter the address of the account used to purchase DAO tokens" type="text" maxlength="42" minlength="40" id="dao_account_adr" 
                               
                               class="input-md input-circle form-control bg-transparent color-light text-center"  aria-describedby="helpBlock" >
+                              <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true" id="dao_account_adr_invalid" style="display:none"></span>                              
+                              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" id="dao_account_adr_valid" style="display:none"></span>                              
                            </form>
                            
                            <div id="dao_account_result" style="display:none">
