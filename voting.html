@@ -178,7 +178,7 @@
                             
                             <h3 class="color-dark">Signing off on a Proposal</h3>
                             
-                            <p>Accepting a Proposal is accomplished by majority decision after a debating process that takes a minimum of two weeks, and the minimum participation rate for a vote to be valid is calculated proportionally to the value of each Proposal.</p>
+                            <p>Accepting a Proposal requires a majority decision after a debating period of two weeks, minimum, and a participation rate of 20% or higher calculated proportionally to the value of ETH requested in the Proposal.</p>
                             
                             <p>Proposals can be as simple or as complex as needed: for example, The DAO can minimize the trust required by signing off Proposals that disburse ETH to its Contractor on a month by month basis as opposed to a lump sum. ETH can be sent to a single address or many, representing various trusted actors each contributing to smaller parts of the project: building a wiki, coordinating a marketing campaign or producing injection molds.</p>
 
@@ -235,12 +235,12 @@
 
                             <h3 class="color-dark">Protecting the DAO</h3>
 
-                            <p>Sometimes however, The DAO could end up being dissatisfied with the performance of the Curator, in which case it will want to change it. Changing the Curator takes the form of a Proposal with a special flag. Votes on changing the Curator take place in two steps. The first, an informal vote on whether The DAO would like to switch Curator or not. The second, a confirmation vote to give a chance to DAO Token Holders to confirm the result of the first vote, or a chance for the minority to ‘split’ their DAO into two and retain control over their ETH.</p>
+                            <p>Sometimes however, The DAO could end up being dissatisfied with the performance of the Curator, in which case it will want to change it. Changing the Curator takes the form of a Proposal with a special flag. Votes on changing the Curator take place in two steps. The first, a non-binding vote on whether DAO Token Holders would like to switch Curator or not. The second, a confirmation vote to give a chance to DAO Token Holders to confirm the result of the first vote, or a chance for the minority to ‘split’ their DAO into two and retain control over their ETH.</p>
 
-                            <p>If a split occurs, both DAOs would continue to operate, each with their own unique tokens, and each with potentially different Curators and Contractors. This would be the equivalent of a large company splitting into two. The rewards for projects already backed by The DAO are also split and fairly distributed: Token Holders on both sides of the split will continue to receive any ongoing rewards from Proposals made prior to the split. Of course, Proposals backed after the split will only distributed rewards to their respective DAO.</p>
+                            <p>If a split occurs, both DAOs would continue to operate, each with their own unique tokens, and each with potentially different Curators and Contractors. This would be the equivalent of a large company splitting into two. The rewards for projects already backed by The DAO are also split and fairly distributed: DAO Token Holders on both sides of the split will continue to receive any ongoing rewards from Proposals made prior to the split. Of course, Proposals backed after the split will only distribute rewards to their respective DAO.</p>
 
 
-                            <p>Note that the above has an added advantage: it prevents someone from acquiring 51% of the tokens then passing a Proposal sending himself 100% of The DAO’s ETH. This idea originates from a <a href="https://blog.ethereum.org/2015/02/14/subjectivity" target="_new">blog post</a> by Vitalik Buterin. The very possibility of a split indeed renders this attack moot: the legit minority would stay with its current Curator and 100% of their own ETH, while the majority attacker would be left without Curator, and with only the ETH it put in itself.</p>
+                            <p>Note that the above has an added advantage: it prevents someone from acquiring 51% of the tokens then passing a Proposal sending himself 100% of The DAO’s ETH. This idea originates from a <a href="https://blog.ethereum.org/2015/02/14/subjectivity" target="_new">blog post</a> by Vitalik Buterin. The very possibility of a split indeed renders this attack moot: the legit minority would stay with its current Curator holding 100% of their own ETH, while the majority attacker would be left without Curator, and with only the ETH the attackers put in themselves.</p>
 
 
 
@@ -252,15 +252,21 @@
 
                             <p>The JSON interface to interact with the contract is:</p>
 
-                            <script src="https://gist.github.com/stephantual/a2f9d26ec9c82e9d03cf389af61d5c6e.js"></script>
+                            <div style="margin-top:-15px;padding-bottom:20px">
+                               <a onclick="$('.showcode').show();" class="button button-pasific button-md hover-ripple-out mt20 animated" data-animation="fadeInUp" data-animation-delay="500">Show JSON-Interface</a>
+                               <a data-clipboard-text="" class="cpy2Clp button button-pasific button-md hover-ripple-out mt20 animated" data-animation="fadeInUp" data-animation-delay="500">Copy to Clipboard</a>
+                            </div>
+                            <div class="showcode" style="display:none">
+                                <script src="https://gist.github.com/stephantual/a2f9d26ec9c82e9d03cf389af61d5c6e.js"></script>
+                            </div>
 
                             <!-- TODO: Add video <p>A generic tutorial video can be found on YouTube.</p> -->
 
-                            <p>Becaues The DAO will be deployed as an exact implementation of the Standard DAO Framework. The <a href="https://download.slock.it/public/DAO/WhitePaper.pdf" target="_new">Whitepaper</a> therefore describes perfectly how the DAO functions and is a great place to start learning more.</p>
+                            <p>Because The DAO will be deployed as an exact implementation of the Standard DAO Framework. The <a href="https://download.slock.it/public/DAO/WhitePaper.pdf" target="_new">Whitepaper</a> therefore describes perfectly how the DAO functions and is a great place to start learning more.</p>
 
                             <!-- TODO insert github url <p>The DAO was deployed using the source code that can be found and audited on address </p>--> 
 
-                            <p>For a step by step on how to vote on a Proposal, please refer to the <a href="https://github.com/slockit/DAO/wiki/How-to-vote-and-execute-a-proposal">Standard DAO Framework Wiki</a></p>
+                            <p>For a step-by-step tutorial on how to vote on a Proposal, please refer to the <a href="https://github.com/slockit/DAO/wiki/How-to-vote-and-execute-a-proposal">Standard DAO Framework Wiki</a></p>
 
                             
                         </div>
@@ -359,9 +365,15 @@
         <!-- <script src="assets/js/main/jquery.sticky.js"></script> -->
         <script src="assets/js/main/imagesloaded.pkgd.min.js"></script>
         <script src="assets/js/main/main.js"></script>
+        <script src="assets/js/main/clipboard.min.js"></script>
 
         <script src="custom.js"></script>
-        
+        <script>
+           $(function() {
+              $('.cpy2Clp').attr("data-clipboard-text",$('#file-donotuse-jason-LC1').html());
+              new Clipboard('.cpy2Clp');
+           });
+        </script>
 
 
 
