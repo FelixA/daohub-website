@@ -161,7 +161,7 @@ $(document).ready(function() {
             var dataperc = $(this).attr('data-perc');
 			$(this).each(function(){			
 				$(this).find('.factor').delay(6000).countTo({
-					from: 10,
+					from: 0,
 					to: dataperc,
 					speed: 3000,
 					refreshInterval: 50,	

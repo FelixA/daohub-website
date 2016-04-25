@@ -230,10 +230,10 @@
                 <!-- title and short description start -->
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center mb50">                        
-                        <h1 class="font-size-normal color-light">
-                            <small class="color-light">A One Time Only Event</small>
-                            Get DAO Tokens
-                        </h1>
+                        <h2 class="font-size-normal color-light">
+                            <small class="color-light pb5">The time has come to breathe life into The DAO</small>
+                            A One Time Only Event
+                        </h2>
                         
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                             <!-- fun fact one start -->
                             <div class="col-md-12 col-sm-6 col-xs-6">
                                 <div class="fact">                                    
-                                    <div class="fact-number timer dao-stat-token-sold-data" data-perc="387">
+                                    <div class="fact-number timer dao-stat-token-sold-data" data-perc="0">
                                         <span class="factor color-light dao-stat-token-sold" ></span>
                                     </div>                                    
                                     <span class="fact-title color-light alpha7">DAO Tokens Created</span>
@@ -259,10 +259,11 @@
                             <!-- fun fact two start -->
                             <div class="col-md-12 col-sm-6 col-xs-6">
                                 <div class="fact">
-                                    <div class="fact-number timer dao-stat-days-left-data" data-perc="578">
+                                    <div class="fact-number timer dao-stat-days-left-data" data-perc="0">
                                         <span class="factor color-light dao-stat-days-left"></span>
                                     </div>
                                     <span class="fact-title color-light alpha7">Days Left</span>
+                                    <span class="fact-title color-light alpha7">Ends 24/05 00:00 UTC</span>
                                 </div>
                             </div>
                             <!-- fun fact two end -->
@@ -278,10 +279,11 @@
                             <!-- fun fact three start -->
                             <div class="col-md-12 col-sm-6 col-xs-6">
                                 <div class="fact">
-                                    <div class="fact-number timer dao-stat-token-price-data" data-perc="175">
+                                    <div class="fact-number timer dao-stat-token-price-data" data-perc="0">
                                         <span class="factor color-light dao-stat-token-price"></span>
                                     </div>
                                     <span class="fact-title color-light alpha7">Current Rate</span>
+                                    <span class="fact-title color-light alpha7">ETH / 100 DAO Tokens</span>
                                 </div>
                             </div>
                             <!-- fun fact three end -->
@@ -289,7 +291,7 @@
                             <!-- fun fact four start -->
                             <div class="col-md-12 col-sm-6 col-xs-6">
                                 <div class="fact">
-                                    <div class="fact-number timer dao-stat-total-eth-data" data-perc="350">
+                                    <div class="fact-number timer dao-stat-total-eth-data" data-perc="0">
                                         <span class="factor color-light dao-stat-total-eth"></span>
                                     </div>
                                     <span class="fact-title color-light alpha7 ">Total ETH</span>
@@ -309,8 +311,9 @@
                 
                 <div class="row">
                     <div class="col-sm-8 col-sm-push-2 text-center">
-                        <h4 class="pt25 color-light">The time has come to breathe life into The DAO</h4>
-                        <p class="pb10 color-light alpha8">DAO tokens are created when sending ETH from any Ethereum Account you have control over to The DAO’s address at 0x8330393….de91f. You can use any wallet of your choosing however we strongly recommend the <a href="https://github.com/ethereum/mist/releases" target="_new">Ethereum Wallet</a>.</p>
+                        <h4 class="pt25 color-light"></h4>
+                        <p class=" color-light alpha8">To receive DAO tokens, follow the wizard below or send ETH from your <a href="https://github.com/ethereum/mist/releases" target="_new">Ethereum Wallet</a> (not an exchange) to The DAO’s address at:</p>
+                        <h2 class="color-white mt0 pb15">0x8846928d683289a2d11df8db7a9474988ef01348</h1>
                         <div id="dao_container">
                            <a href="#" class="button button-md button-gray hover-ripple-out"><span class="color-primary">COULD NOT LOAD TOKEN CREATION MODULE</span></a> <!-- this will never show --> 
                         </div>
@@ -322,9 +325,7 @@
                            <h5 class="text-center mb20">Check Your Balance</h4>
                            <form id="dao_account_form" class="form-horizontal has-feedback">
                               <label class="sr-only" for="dao_account_adr">Input your address</label>
-                              <input  placeholder="Enter the address of the Ethereum account used to create DAO tokens" type="text" maxlength="42" minlength="40" id="dao_account_adr" 
-                              
-                              class="input-md input-circle form-control bg-transparent color-light text-center"  aria-describedby="helpBlock" >
+                              <input  placeholder="Enter the address of the Ethereum account used to create DAO tokens" type="text" maxlength="42" minlength="40" id="dao_account_adr" class="input-md input-circle form-control bg-transparent color-light text-center"  aria-describedby="helpBlock" >
                               <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true" id="dao_account_adr_invalid" style="display:none"></span>                              
                               <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" id="dao_account_adr_valid" style="display:none"></span>                              
                            </form>

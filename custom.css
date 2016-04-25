@@ -86,3 +86,8 @@ dao_account_adr::-moz-placeholder { /* Mozilla Firefox 19+ */
 dao_account_adr:-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    yellow;
 }
+
+
+.fact, .factor {
+    font-size: 43px;
+}
