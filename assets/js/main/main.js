@@ -159,13 +159,20 @@ $(document).ready(function() {
         "use strict";
 		$(".fact-number").appear(function(){
             var dataperc = $(this).attr('data-perc');
+            var unit     = "", p = dataperc.indexOf(" ");
+            if (p>0) {
+                unit = dataperc.substring(p+1);
+                dataperc = dataperc.substring(0,p);
+                $(this).find(".unit").html(unit); 
+            }
+               
 			$(this).each(function(){			
 				$(this).find('.factor').delay(6000).countTo({
 					from: 0,
 					to: dataperc,
 					speed: 3000,
 					refreshInterval: 50,	
-               decimals : dataperc.indexOf(".")<0?0:2
+                    decimals : dataperc.indexOf(".")<0?0:2
 				});  
 			});
 		});
@@ -453,3 +460,22 @@ $(window).load(function() {
     }
 
 });
+
+
+
+// general util-functions
+
+function formatStats(val, unit) {
+    if (unit=='M') {
+        if (val<1000) return val+" ";
+        if (val<1000000) return (val / 1000)+" K";
+        return ""+(val / 1000000)+" M";
+    }
+    if (unit=='time') {
+        if (val>2) return parseInt(val)+" days";
+        if (val>(1/24)) return parseInt(val/1.24)+" hours";
+    }
+    
+    
+    return val;
+}
