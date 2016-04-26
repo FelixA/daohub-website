@@ -93,3 +93,11 @@ dao_account_adr:-ms-input-placeholder { /* Internet Explorer 10-11 */
 .fact, .factor {
     font-size: 43px;
 }
+
+
+#fact a {
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #ffffff !important;
+}
+
