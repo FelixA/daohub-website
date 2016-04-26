@@ -72,19 +72,21 @@ ul.icon-list li {
 }
 
 #dao_account_adr::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    yellow;
+    color:    darkgray;
     opacity:  0.5;
 }
 dao_account_adr:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    yellow;
+    color:    darkgray;
+
     opacity:  0.5;
 }
 dao_account_adr::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    yellow;
+    color:    darkgray;
+
     opacity:  0.5;
 }
 dao_account_adr:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    yellow;
+    color:    darkgray
 }
 
 

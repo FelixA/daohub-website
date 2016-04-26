@@ -160,7 +160,34 @@
 
 
 
-
+   <div class="row" style="padding-top:30px">
+                    <div class="col-sm-8 col-sm-push-2 text-center">
+                           <h5 class="text-center mb20">Check Your Balance</h4>
+                           
+                           <form id="dao_account_form" class="form-inline has-feedback">
+                               <div class="form-group has-success has-feedback">
+                                    <label class="sr-only" for="dao_account_adr">Input your address</label>
+                                    <input  placeholder="Enter the address of the Ethereum account used to create DAO tokens" type="text" maxlength="42" minlength="40" id="dao_account_adr" 
+                                    class="input-md input-circle form-control bg-transparent color-dark text-center"  style="width:400px" aria-describedby="helpBlock" >
+                                    <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true" id="dao_account_adr_invalid" style="display:none"></span>                              
+                                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" id="dao_account_adr_valid" style="display:none"></span>
+                               </div>
+                               <button type="submit" class="button button-sm button-primary text-capitalize mt5">Check</button>                                                             
+                           </form>
+                           
+                           <div id="dao_account_result" style="display:none">
+                              <div class="row" style="padding-top:20px">
+                                 <div class="col-md-6">
+                                    Account Balance : <b style="font-size:19px" id="dao_account_balance"></b> ETH
+                                 </div>
+                                 <div class="col-md-6">
+                                    DAO tokens owned : <b style="font-size:19px" id="dao_account_tokens"></b> DAO tokens
+                                 </div>
+                              </div>
+                          </div>
+                                                
+                    </div>
+                </div>
 
 
         
@@ -349,7 +376,9 @@
         <script src="assets/js/main/main.js"></script>
 
         <script src="custom.js"></script>
-        
+        <script src="tokencreation/src/init.js"></script>
+        <script>$(function(){ initBalanceCheck(); });</script>
+
 
 
         <script>
