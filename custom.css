@@ -75,7 +75,7 @@ ul.icon-list li {
     color:    darkgray;
     opacity:  0.5;
 }
-dao_account_adr:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+dao_account_adr:-moz-placeholder { /* Mozilla Firef ox 4 to 18 */
     color:    darkgray;
 
     opacity:  0.5;
@@ -95,9 +95,20 @@ dao_account_adr:-ms-input-placeholder { /* Internet Explorer 10-11 */
 }
 
 
-#fact a {
+#fact .textLink {
     font-weight: bolder;
     text-decoration: underline;
     color: #ffffff !important;
 }
 
+
+#fact a {
+    color: #004FFF;
+    outline: none;
+    text-decoration: underline;
+}
+#fact a:hover,
+#fact a:focus {
+    color: #004FFF;
+    outline: none;
+}
