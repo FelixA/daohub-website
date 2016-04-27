@@ -255,7 +255,7 @@
 
                             <div style="margin-top:-15px;padding-bottom:20px">
                                <a onclick="$('.showcode').show();" class="button button-pasific button-md hover-ripple-out mt20 animated" data-animation="fadeInUp" data-animation-delay="500">Show JSON-Interface</a>
-                               <a data-clipboard-text="" class="cpy2Clp button button-pasific button-md hover-ripple-out mt20 animated" data-animation="fadeInUp" data-animation-delay="500">Copy to Clipboard</a>
+                               <a data-clipboard-text="test" class="cpy2Clp button button-pasific button-md hover-ripple-out mt20 animated" data-animation="fadeInUp" data-animation-delay="500">Copy to Clipboard</a>
                             </div>
                             <div class="showcode" style="display:none">
                                 <script src="https://gist-it.appspot.com/https://github.com/slockit/DAO/tree/master/deploy/interface/minimal.json"></script>
@@ -366,7 +366,7 @@
         <script src="custom.js"></script>
         <script>
            $(function() {
-              $('.cpy2Clp').attr("data-clipboard-text",$('#file-donotuse-jason-LC1').html());
+              $('.cpy2Clp').attr("data-clipboard-text",$('.gist-data').text().replace(/[ \t\r\n\xA0]/g,""));
               new Clipboard('.cpy2Clp');
            });
         </script>
