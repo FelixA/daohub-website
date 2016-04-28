@@ -251,11 +251,16 @@
                
                             <p>Once deployed, it will immediately become possible to interact with the DAO smart contract by registering its interface within the <a href="https://github.com/ethereum/mist/releases" target="_new">Ethereum Wallet</a>. It's expected for a simpler, dedicated GUI to be deployed once Mist, the Ethereum browser, comes out of alpha. </p>
 
+
+                            <p>To register the contract in the Ethereum Wallet, copy the JSON below, click 'Contracts' in the menu then 'Watch Contract'. In the "Watch Contracts" interface, type 'The DAO' as the Contract name, paste the contract address, and the JSON interface. Click 'OK'.</p>
+
+                            <p>With the contract interface registered, click "The DAO" in your custom contract section, and wait a few seconds. You are now able to use the interface and interact with the contract.</p>
+
                             <p>The JSON interface to interact with the contract is:</p>
 
                             <div style="margin-top:-15px;padding-bottom:20px">
-                               <a onclick="$('.showcode').show();" class="button button-pasific button-md hover-ripple-out mt20 animated" data-animation="fadeInUp" data-animation-delay="500">Show JSON-Interface</a>
-                               <a data-clipboard-text="test" class="cpy2Clp button button-pasific button-md hover-ripple-out mt20 animated" data-animation="fadeInUp" data-animation-delay="500">Copy to Clipboard</a>
+                               <a onclick="$('.showcode').show();" class="button button-pasific button-md hover-ripple-out mt20 " data-animation="fadeInUp" data-animation-delay="500">Show JSON-Interface</a>
+                               <a data-clipboard-text="test" class="cpy2Clp button button-pasific button-md hover-ripple-out mt20 " data-animation="fadeInUp" data-animation-delay="500">Copy to Clipboard</a>
                             </div>
                             <div class="showcode" style="display:none">
                                 <script src="https://gist-it.appspot.com/https://github.com/slockit/DAO/tree/master/deploy/interface/minimal.json"></script>
