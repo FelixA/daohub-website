@@ -119,3 +119,10 @@ dao_account_adr:-ms-input-placeholder { /* Internet Explorer 10-11 */
         font-size: 13px;
     }
 }
+
+
+.imprint {
+    color: #8b949b;
+    font-size: 12px;
+    
+}
