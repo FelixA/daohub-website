@@ -171,89 +171,40 @@
         ===================================== -->
         <section id="blog" class="pt50 pb50">
             <div class="container">
+
+
                 
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
-                        
-                        <div class="blog-three-mini">
+
+                          <div class="blog-three-mini">
                     
-                            
-                            <h3 class="color-dark">Signing off on a Proposal</h3>
-                            
-                            <p>Accepting a Proposal requires a majority decision after a debating period of two weeks minimum, and a participation rate of 20% or higher calculated proportionally to the value of ETH requested in the Proposal.</p>
-                            
-                            <p>Proposals can be as simple or as complex as needed: for example, The DAO can minimize the trust required by signing off Proposals that disburse ETH to its Contractor on a month by month basis as opposed to a lump sum. ETH can be sent to a single address or many, representing various trusted actors each contributing to smaller parts of the project: building a wiki, coordinating a marketing campaign or producing injection molds.</p>
-
-                            <p>Proposals can also contain operational parameters — for example, they could contain a charge levied by The DAO each time one of the products or services The DAO commissioned from the Contractor is used by non-token holders. This is represented as a variable percentage, defined by The DAO itself.</p>
-                            
-                            <p>The Proposal process allows for the code representing The DAO itself (the smart contract that holds the ETH) to stay immutable and therefore safe, while maintaining flexibility should The DAO desire to switch business models or become dissatisfied with the Contractor(s) performance.</p>
-
-
-
-                         </div>
-
-                    </div>
-
-                </div>
-
-
-
-
-
-
-
-                <div class="row">
-                    <div class="col-md-12">
-                        
-                        <div class="blog-three-mini">
-                    
-
-                            <p align="center" class="mt45 mb35">
-                                <img src="_assets/img/voting/voting.jpg" alt="Synergistic" class="img-responsive">
-                                <small>Fig.1 The DAO Proposal Voting Process</small>
-                            </p>
-                           
-                         </div>
-
-                    </div>
-
-                </div>
-
-
-  
-                              
-                
-                <div class="row">
-                    <div class="col-md-12">
-                        
-                        <div class="blog-three-mini">
-                    
-
-                       
-
-
-
-
-
-                            <h3 class="color-dark">Protecting the DAO</h3>
-
-                            <p>Sometimes however, The DAO could end up being dissatisfied with the performance of the Curator, in which case it will want to change it. Changing the Curator takes the form of a Proposal with a special flag. Votes on changing the Curator take place in two steps. The first, a non-binding vote on whether DAO Token Holders would like to switch Curator or not. The second, a confirmation vote to give a chance to DAO Token Holders to confirm the result of the first vote, or a chance for the minority to ‘split’ their DAO into two and retain control over their ETH.</p>
-
-                            <p>If a split occurs, both DAOs would continue to operate, each with their own unique tokens, and each with potentially different Curators and Contractors. This would be the equivalent of a large company splitting into two. The rewards for projects already backed by The DAO are also split and fairly distributed: DAO Token Holders on both sides of the split will continue to receive any ongoing rewards from Proposals made prior to the split. Of course, Proposals backed after the split will only distribute rewards to their respective DAO.</p>
-
-
-                            <p>Note that the above has an added advantage: it prevents someone from acquiring 51% of the tokens then passing a Proposal sending himself 100% of The DAO’s ETH. This idea originates from a <a href="https://blog.ethereum.org/2015/02/14/subjectivity" target="_new">blog post</a> by Vitalik Buterin. The very possibility of a split indeed renders this attack moot: the legit minority would stay with its current Curator holding 100% of their own ETH, while the majority attacker would be left without Curator, and with only the ETH they put in themselves.</p>
-
-
-
                             <h3 class="color-dark pt25">Interacting with the DAO</h3>
 
+                            
+                            <p>Once you have obtained DAO Tokens, you can check your DAO Token balance and start to interact with the DAO smart contract. In order to do this, you need to 'watch' the token and the contract using the <a href="https://github.com/ethereum/mist/releases" target="_new">Ethereum Wallet</a>. It's expected for a simpler, dedicated GUI to be deployed once Mist, the Ethereum browser, comes out of alpha. </p>
+                            
+                            <h5 class="color-dark pt10">Monitoring your balance</h5>
 
-               
-                            <p>Once deployed, it will immediately become possible to interact with the DAO smart contract by registering its interface within the <a href="https://github.com/ethereum/mist/releases" target="_new">Ethereum Wallet</a>. It's expected for a simpler, dedicated GUI to be deployed once Mist, the Ethereum browser, comes out of alpha. </p>
+                            This is done by 'watching' the Token.
+
+                            <p>Click "Contracts" in the Ethereum Wallet menu, scroll down then select "Watch Token"</p>
+
+                            <p>Paste the following information:<br/><br/>
+                            Token Contract Address: 0xbb9bc244d798123fde783fcc1c72d3bb8c189413<br/>
+                            Token name: The DAO<br/>
+                            Token Symbol: Ð<br/>
+                            Decimal Places: 16<br/>
+                            </p>
+
+                            <p>You're all set! Your DAO token balance will appear in the custom contract list, as such:</p>
+
+                            <p>For more information, please visit the community's <a href="https://forum.daohub.org/c/theDAO/support">support forums</a></p>
 
 
-                            <p>To register the contract in the Ethereum Wallet, copy the JSON below, click 'Contracts' in the menu then 'Watch Contract'. In the "Watch Contracts" interface, type 'The DAO' as the Contract name, paste the contract address, and the JSON interface. Click 'OK'.</p>
+                            <h5 class="color-dark pt15">Voting and other functions</h5>
+
+                            <p>To interact with the DAO contract, you need to register its smart contract in the <a href="https://github.com/ethereum/mist/releases" target="_new">Ethereum Wallet</a>. Start by copying the JSON code below, then navigate to 'Contracts'. Select then 'Watch Contract'. In the "Watch Contracts" interface, type 'The DAO' as the Contract name, paste the contract address, and the JSON interface. Click 'OK'.</p>
 
                             <p>With the contract interface registered, click "The DAO" in your custom contract section, and wait a few seconds. You are now able to use the interface and interact with the contract.</p>
 
@@ -269,18 +220,38 @@
 
                             <!-- TODO: Add video <p>A generic tutorial video can be found on YouTube.</p> -->
 
-                            <p>Because The DAO will be deployed as an exact implementation of the Standard DAO Framework. The <a href="https://download.slock.it/public/DAO/WhitePaper.pdf" target="_new">Whitepaper</a> therefore describes perfectly how the DAO functions and is a great place to start learning more.</p>
+                            <p>Because The DAO has been deployed as an exact implementation of the Standard DAO Framework, the <a href="https://download.slock.it/public/DAO/WhitePaper.pdf" target="_new">Whitepaper</a> describes perfectly how the DAO functions and is a great place to start learning more.</p>
 
-                            <p>The DAO was deployed using the source code that can be found and audited on <a href="https://github.com/slockit/dao" target="_new">github</a></p>
+                            <p>The DAO was deployed using the source code that can be found and <a href="https://github.com/slockit/DAO/wiki/The-DAO-v1.0-Code#verifying-the-dao-code" target="_new">audited</a> on <a href="https://github.com/slockit/dao" target="_new">github</a></p>
 
                             <p>For a step-by-step tutorial on how to vote on a Proposal, please refer to the <a href="https://github.com/slockit/DAO/wiki/How-to-vote-and-execute-a-proposal">Standard DAO Framework Wiki</a></p>
 
+
                             
-                        </div>
-                
-                    </div>                    
-                    
+                             <h5 class="color-dark pt15">Signing off on a Proposal</h5>
+                            
+                            <p>Accepting a Proposal requires a majority decision after a debating period of two weeks minimum, and a participation rate of 20% or higher calculated proportionally to the value of ETH requested in the Proposal.</p>
+                            
+                            <p>Proposals can be as simple or as complex as needed: for example, The DAO can minimize the trust required by signing off Proposals that disburse ETH to its Contractor on a month by month basis as opposed to a lump sum. ETH can be sent to a single address or many, representing various trusted actors each contributing to smaller parts of the project: building a wiki, coordinating a marketing campaign or producing injection molds.</p>
+
+                            <p>Proposals can also contain operational parameters — for example, they could contain a charge levied by The DAO each time one of the products or services The DAO commissioned from the Contractor is used by non-token holders. This is represented as a variable percentage, defined by The DAO itself.</p>
+                            
+                            <p>The Proposal process allows for the code representing The DAO itself (the smart contract that holds the ETH) to stay immutable and therefore safe, while maintaining flexibility should The DAO desire to switch business models or become dissatisfied with the Contractor(s) performance.</p>
+
+                            <p>Technical information on voting can be found on the <a href="https://github.com/slockit/DAO/wiki/How-to-vote-and-execute-a-proposal" target="_new">wiki</a></p>
+
+
+                         </div>
+
+                    </div>
+
                 </div>
+
+
+
+  
+                              
+                
                 
             </div>
         </section>
