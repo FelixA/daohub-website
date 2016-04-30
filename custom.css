@@ -112,3 +112,10 @@ dao_account_adr:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #004FFF;
     outline: none;
 }
+
+
+@media screen and (max-width: 700px) {
+    .daoadress {
+        font-size: 13px;
+    }
+}
