@@ -473,7 +473,8 @@ function formatStats(val, unit) {
     }
     if (unit=='time') {
         if (val>2) return parseInt(val)+" days";
-        return parseInt(val*24)+" hours";
+        if (val>1/12) return parseInt(val*24)+" hours";
+        return parseInt(val*24*60)+" minutes";
     }
     
     return val;
