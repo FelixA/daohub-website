@@ -124,17 +124,18 @@
 
                     <ul class="nav navbar-nav">
 
-                        <li><a href="creation.html" class="color-light">Creation</a></li>
-                        <li><a href="proposals.html" class="color-light">Proposals</a></li>
+                       <!--<li><a href="creation.html" class="color-light">Creation</a></li>-->
+                        <!--<li><a href="proposals.html" class="color-light">Proposals</a></li>-->
+						<li><a href="principles.html" class="color-light">Principles</a></li>
                         <li><a href="manifesto.html" class="color-light">Manifesto</a></li>
-                        <li><a href="curator.html" class="color-light">Curator</a></li>
-                        <li><a href="principles.html" class="color-light">Principles</a></li>
+                        <li><a href="curator.html" class="color-light">Curator</a></li>                  
                         <li><a href="voting.html" class="color-light">Voting</a></li>
-                        <li><a href="forums.html" class="color-light">Forums</a></li>
                         <li><a href="explainer.html" class="color-light">Terms</a></li>
+						<li><a href="forums.html" class="color-light">Forums</a></li>
                         <li><a href="https://forum.daohub.org/c/theDAO/support" class="color-light">Support</a></li>
                         <li><a href="https://blog.daohub.org/" class="color-light" target="_new">Blog</a></li>
-                        <li><a href="https://daowiki.atlassian.net/wiki/" class="color-light">Wiki</a></li>
+						<li><a href="https://daowiki.atlassian.net/wiki/" class="color-light">Wiki</a></li>
+                        <li><a href="http://thedailydao.io/" class="color-light">DAO news</a></li>
                         
                     </ul>
                 
@@ -308,7 +309,7 @@
                                         <span class="factor color-light dao-stat-token-price"></span>
                                         <span class="unit color-light "></span>
                                     </div>
-                                    <span class="fact-title color-light alpha7">Current Rate</span>
+                                    <span class="fact-title color-light alpha7">Last exchange Rate</span>
                                     <span class="fact-title color-light alpha7">ETH / 100 DAO Tokens</span>
                                 </div>
                             </div>
@@ -333,7 +334,7 @@
                                         <span class="unit color-light "></span>                                        
                                     </div>
                                     <span class="fact-title color-light alpha7">Left</span>
-                                    <span class="fact-title color-light alpha7">Ends <span class="dao-stat-end"></span></span>
+                                    <span class="fact-title color-light alpha7">Ended <span class="dao-stat-end"></span></span>
                                 </div>
                             </div>
                             <!-- fun fact four end -->
@@ -351,7 +352,7 @@
                 <div class="row">
                     <div class="col-sm-8 col-sm-push-2 text-center">
                         <h4 class="pt25 color-light"></h4>
-                        <p class=" color-light alpha8"> Please do NOT send any more ether to the address of The DAO</a></strong></p>
+                        <p class=" color-light alpha8"> Please do NOT send any more eth to The DAO</a></strong></p>
                     </div>
                 </div>
 
@@ -365,16 +366,78 @@
 
                     </div>
                 </div>-->
+		
                 
-              
+                <section>
+				<div class="row">
+                <div class="col-sm-8 col-sm-push-2 text-center">
+                   <h5 class="text-center mb500">
+                   Check Your Balance
+                   <small class="heading heading-dashed-icon center-block">
+                        <span>&nbsp;</span>
+                        <i class="fa fa-check"></i>
+                        <span>&nbsp;</span>
+                    </small>
+                   </h4>
+                   
+                   <form id="dao_account_form" class="form-inline has-feedback">
+                       <div class="form-group has-success has-feedback">
+                            <label class="sr-only" for="dao_account_adr">Input your address</label>
+                            <input  placeholder="Enter the Ethereum address account used to create DAO tokens" type="text" maxlength="42" minlength="40" id="dao_account_adr" 
+                            class="input-md input-rounded form-control  color-dark text-center"  style="width:500px" aria-describedby="helpBlock" >
+                            <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true" id="dao_account_adr_invalid" style="display:none"></span>                              
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" id="dao_account_adr_valid" style="display:none"></span>
+                       </div>
+                       <button type="submit" class="button-3d button-md button-rounded button-pasific hover-icon-pulse ml20">Check</button>                                                             
+                   </form>
+                   
+                   <div id="dao_account_result" style="display:none" >
+                      <div class="row" style="padding-top:20px">
+                            DAO Tokens owned : <b style="font-size:19px" id="dao_account_tokens"></b> 
+                      </div>
+                  </div>
+                   </div>                    
+				</div>
+             </section> 
                 
-                
-                
-            </div><!-- container end -->
+           
         </div><!-- section fun fact end -->
-        
-
-        
+         </div><!-- container end -->
+				
+			<!--<section class="bg-grad-stellar  pb20">
+			<div class="row" >-->
+         <!--<section class="bg-gray mt20 pb20">
+        <div class="row" style="padding-top:30px" >-->
+           <!-- <div class="col-sm-8 col-sm-push-2 text-center">
+                   <h5 class="text-center mb20">
+                   Check Your Balance
+                   <small class="heading heading-dashed-icon center-block">
+                        <span>&nbsp;</span>
+                        <i class="fa fa-check"></i>
+                        <span>&nbsp;</span>
+                    </small>
+                   </h4>
+                   
+                   <form id="dao_account_form" class="form-inline has-feedback">
+                       <div class="form-group has-success has-feedback">
+                            <label class="sr-only" for="dao_account_adr">Input your address</label>
+                            <input  placeholder="Enter the Ethereum address account used to create DAO tokens" type="text" maxlength="42" minlength="40" id="dao_account_adr" 
+                            class="input-md input-rounded form-control  color-dark text-center"  style="width:500px" aria-describedby="helpBlock" >
+                            <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true" id="dao_account_adr_invalid" style="display:none"></span>                              
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" id="dao_account_adr_valid" style="display:none"></span>
+                       </div>
+                       <button type="submit" class="button-3d button-md button-rounded button-pasific hover-icon-pulse ml20">Check</button>                                                             
+                   </form>
+                   
+                   <div id="dao_account_result" style="display:none" >
+                      <div class="row" style="padding-top:20px">
+                            DAO Tokens owned : <b style="font-size:19px" id="dao_account_tokens"></b> 
+                      </div>
+                  </div>
+                                        
+            </div>
+        </div>
+         </section>-->
         
         <!-- Service Area
         ===================================== -->
@@ -413,9 +476,9 @@
                         <p class="mt20">
                             DAOs will be at the center of many economies going forward and intend to be at the forefront of supporting innovative and promising projects, products and services in order to become 'The DAO': A flexible decentralized autonomous organization leveraging the wisdom of the crowds to benefit the DAO Token Holders.
                         </p>
-                        <p>
+                       <!-- <p>
                             <a href="proposals.html" class="button-o button-sm button-primary hover-fade">See the Proposals</a>
-                        </p>
+                        </p>-->
                     </div>
                 </div>
                 <!-- service one end -->
@@ -495,20 +558,25 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <ul class=" bb-solid-1">
-                                    <li><a href="creation.html">Creation</a></li>
-                                    <li><a href="proposals.html">Proposals</a></li>
+                                    <!--<li><a href="creation.html">Creation</a></li>-->
+                                    <!--<li><a href="proposals.html">Proposals</a></li>-->
+									<li><a href="principles.html">Principles</a></li>
                                     <li><a href="manifesto.html">Manifesto</a></li>
-                                    <li><a href="principles.html">Principles</a></li>
                                     <li><a href="curator.html">Curator</a></li>
+									 <li><a href="voting.html">Voting</a></li>
+									   <li><a href="explainer.html">Terms</a></li>
                                 </ul>
                             </div>
                             
                             <div class="col-sm-12 mt25">
                                 <ul>
-                                    <li><a href="voting.html">Voting</a></li>
+                                   
                                     <li><a href="forums.html">Forums</a></li>
-                                    <li><a href="explainer.html">Terms</a></li>
                                     <li><a href="https://forum.daohub.org/c/theDAO/support">Support</a></li>
+									<li><a href="https://blog.daohub.org/">Blog</a></li>
+									<li><a href="https://daowiki.atlassian.net/wiki/">Wiki</a></li>
+									<li><a href="http://thedailydao.io/">News</a></li>
+									
                                 </ul>
                             </div>
                         </div>
@@ -551,9 +619,6 @@
         <script src="assets/js/typed/typed.min.js"></script>
 
 
-
-
-        
         <!-- JQuery Main
         =====================================-->
         <script src="assets/js/main/jquery.appear.js"></script>
@@ -565,15 +630,9 @@
         <script src="assets/js/main/imagesloaded.pkgd.min.js"></script>
         <script src="assets/js/main/main.js"></script>
 
-
-
-
-
-        
         <script src="custom.js"></script>
-
         <script src="tokencreation/src/init.js"></script>
-        
+        <script>$(function(){ initBalanceCheck(); });</script>
 
 
 
@@ -587,8 +646,5 @@
         ga('send', 'pageview');
 
         </script>
-
-
-
     </body>
 </html>
