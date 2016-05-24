@@ -474,6 +474,7 @@ function formatStats(val, unit) {
     if (unit=='time') {
         if (val>2) return parseInt(val)+" days";
         if (val>1/12) return parseInt(val*24)+" hours";
+        if (val==0) return "-";
         return parseInt(val*24*60)+" minutes";
     }
     
