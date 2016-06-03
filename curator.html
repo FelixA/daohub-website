@@ -345,6 +345,7 @@
                                 <a href="https://twitter.com/feindura" target="_new"><i class="fa fa-fw">&#xf099</i></a>
                                 <a href="https://github.com/frozeman" target="_new"><i class="fa fa-github"></i></a>
                             </div>
+
                             <h5>Fabian Vogelsteller<small class="color-pasific">Lead Ðapp Developer: Mist</small><small>Ethereum Foundation*</small></h5>
                         </div>
                     </div>
@@ -358,28 +359,55 @@
 
                 <div class="row pt70">
                     <div class="col-md-12">
-                       <p>*All curators act as individuals independent of their Employers</p>
+
+						<p>*All curators act as individuals independent of their Employers</p>
+
                         <div class="blog-three-mini">
 
 
 
                             <h3 class="color-dark">Protecting the DAO</h3>
 
+                            <p>A Curator is a failsafe mechanism that indirectly prevents malicious actors from executing 51% attack. Curators do not add centralization to the DAO: they are nominated by the DAO Token Holders themselves, and can be fired at any time, for any reason. Curators curate the whitelist, the list of Contractors authorized to receive ether from the DAO. The following table shows the different responsibilities of curators and token holders</p>
+							
+							<table style="width:100%">
+								<tr>
+									<th>Task</th>
+									<th>Curators</th> 
+									<th>Token holders</th>
+								</tr>
+								<tr>
+									<td>Check that the published Contract on the Ethereum blockchain matches the source code the Contractor claims to have deployed (this is done by comparing bytecode).</td>
+									<td><i class="fa fa-check color-green"></td> 
+									<td><i class="fa fa-check color-green"></td>
+								</tr>
+								<tr>
+									<td>Confirm that a Proposal comes from an identified person or organization. This is done by asking the entity submitting the Proposal to send a signed transaction with a certain set of data only known to the Curator and the author of the Proposal, thereby confirming the author of the Proposal.</td>
+									<td><i class="fa fa-check color-green"></td> 
+									<td><i class="fa fa-check color-green"></td>
+								</tr>
+								<tr>
+									<td>Evaluate whether a Proposal is ‘good’ or not.</td>
+									<td><i class="fa fa-times color-danger"></td> 
+									<td><i class="fa fa-check color-green"></td>
+								</tr>
+								<tr>
+									<td>Audit the Proposal’s smart contract code.</td>
+									<td><i class="fa fa-times color-danger"></td> 
+									<td><i class="fa fa-check color-green"></td>
+								</tr>
+								<tr>
+									<td>Provide legal advice regarding the Proposal (if any).</td>
+									<td><i class="fa fa-times color-danger"></td> 
+									<td>(<i class="fa fa-check color-green"></i>)</td>
+								</tr>
+								<tr>
+									<td>Take an economic responsibility for the Proposal.</td>
+									<td><i class="fa fa-times color-danger"></td> 
+									<td><i class="fa fa-check color-green"></td>
+								</tr>
+							</table>
 
-                            <p>A Curator is a failsafe mechanism that indirectly prevents malicious actors from executing 51% attack. Curators do not add centralization to the DAO: they are nominated by the DAO Token Holders themselves, and can be fired at any time, for any reason. Curators curate the whitelist, the list of Contractors authorized to receive ether from the DAO. A Curator therefore holds two primary functions:</p>
-
-                            <p>First, when a DAO Token Holder submits a Proposal in the form of a smart contract, the Curator checks that the published Contract on the Ethereum blockchain matches the source code the Contractor claims to have deployed (this is done by comparing bytecode).</p>
-
-                            <p>Second, a Curator confirms that a Proposal comes from an identified person or organization. This is done by asking the entity submitting the Proposal to send a signed transaction with a certain set of data only known to the Curator and the author of the Proposal, thereby confirming the author of the Proposal.</p>
-
-                            <p class="mb10">The above are the only two functions of a Curator. For clarity, the following tasks are therefore <b>not the role of a Curator</b>, but instead the role of the DAO as a whole:</p>
-
-                            <ul class="icon-list mt0 mb25">
-                                <li><i class="fa fa-times color-danger"></i>Evaluate whether a Proposal is ‘good’ or not.</li>
-                                <li><i class="fa fa-times color-danger"></i>Audit the Proposal’s smart contract code.</li>
-                                <li><i class="fa fa-times color-danger"></i>Provide legal advice regarding the Proposal (if any).</li>
-                                <li><i class="fa fa-times color-danger"></i>Take responsibility for the Proposal.</li>
-                            </ul>
 
 
 
@@ -392,9 +420,6 @@
 
 
                             <p>Note that the above has an added advantage: it prevents someone from acquiring 51% of the tokens then passing a Proposal sending himself 100% of The DAO’s ETH. This idea originates from a <a href="https://blog.ethereum.org/2015/02/14/subjectivity" target="_new">blog post</a> by Vitalik Buterin. The very possibility of a split indeed renders this attack moot: the legit minority would stay with its current Curator holding 100% of their own ETH, while the majority attacker would be left without Curator, and with only the ETH they put in themselves.</p>
-
-
-
 
                         </div>
 
