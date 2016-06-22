@@ -132,3 +132,7 @@ img.FooterLogo {
     display: block;
     margin: 0 auto;
 }
+
+.nav>li>a {
+    padding: 10px 10px;
+}
